@@ -1,0 +1,232 @@
+{
+  "resources": {
+    "bucket-l1": {
+      "id": "bucket-l1",
+      "name": "bucket-l1",
+      "objects": 2,
+      "tags": {
+        "env": "qa-archive"
+      },
+      "type": "bucket"
+    },
+    "bucket-q1": {
+      "id": "bucket-q1",
+      "name": "bucket-q1",
+      "objects": 0,
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "bucket"
+    },
+    "bucket-q2": {
+      "id": "bucket-q2",
+      "name": "bucket-q2",
+      "objects": 9,
+      "tags": {
+        "env": "qa-ledger",
+        "retain": "true",
+        "team": "ledger"
+      },
+      "type": "bucket"
+    },
+    "dns-q1": {
+      "id": "dns-q1",
+      "name": "dns-q1",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "target": "lb-q1",
+      "type": "dns"
+    },
+    "dns-q2": {
+      "id": "dns-q2",
+      "name": "dns-q2",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "target": "lb-q1",
+      "type": "dns"
+    },
+    "i-f1": {
+      "id": "i-f1",
+      "name": "i-f1",
+      "sgs": [],
+      "subnet": "subnet-q2",
+      "tags": {
+        "env": "qa-tools",
+        "owner": "v.shah",
+        "team": "qa-platform"
+      },
+      "type": "instance"
+    },
+    "i-q1": {
+      "id": "i-q1",
+      "name": "i-q1",
+      "sgs": [
+        "sg-q1"
+      ],
+      "subnet": "subnet-q1",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "instance"
+    },
+    "i-q2": {
+      "id": "i-q2",
+      "name": "i-q2",
+      "sgs": [
+        "sg-q1",
+        "sg-q2"
+      ],
+      "subnet": "subnet-q2",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "instance"
+    },
+    "lb-f1": {
+      "id": "lb-f1",
+      "name": "lb-f1",
+      "sgs": [
+        "sg-q1"
+      ],
+      "subnets": [],
+      "tags": {
+        "env": "qa-tools",
+        "owner": "v.shah",
+        "team": "qa-platform"
+      },
+      "targets": [],
+      "type": "lb"
+    },
+    "lb-q1": {
+      "id": "lb-q1",
+      "name": "lb-q1",
+      "sgs": [
+        "sg-q2"
+      ],
+      "subnets": [
+        "subnet-q1"
+      ],
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "targets": [
+        "i-q1"
+      ],
+      "type": "lb"
+    },
+    "sg-q1": {
+      "id": "sg-q1",
+      "name": "sg-q1",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "sg",
+      "vpc": "vpc-q1"
+    },
+    "sg-q2": {
+      "id": "sg-q2",
+      "name": "sg-q2",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "sg",
+      "vpc": "vpc-q1"
+    },
+    "snap-00002": {
+      "id": "snap-00002",
+      "name": "snap-00002",
+      "size_gb": 10,
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "snapshot",
+      "volume": "vol-q1"
+    },
+    "subnet-q1": {
+      "id": "subnet-q1",
+      "name": "subnet-q1",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "subnet",
+      "vpc": "vpc-q1"
+    },
+    "subnet-q2": {
+      "id": "subnet-q2",
+      "name": "subnet-q2",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "subnet",
+      "vpc": "vpc-q1"
+    },
+    "vol-l1": {
+      "attached_to": null,
+      "id": "vol-l1",
+      "name": "vol-l1",
+      "size_gb": 1,
+      "tags": {
+        "env": "qa-ledger-old"
+      },
+      "type": "volume"
+    },
+    "vol-q1": {
+      "attached_to": "i-q1",
+      "id": "vol-q1",
+      "name": "vol-q1",
+      "size_gb": 10,
+      "tags": {
+        "backup": "required",
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "volume"
+    },
+    "vol-q2": {
+      "attached_to": "i-q2",
+      "id": "vol-q2",
+      "name": "vol-q2",
+      "size_gb": 10,
+      "tags": {
+        "backup": "required",
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "volume"
+    },
+    "vol-q3": {
+      "attached_to": null,
+      "id": "vol-q3",
+      "name": "vol-q3",
+      "size_gb": 5,
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "volume"
+    },
+    "vpc-q1": {
+      "id": "vpc-q1",
+      "name": "vpc-q1",
+      "tags": {
+        "env": "qa-ledger",
+        "team": "ledger"
+      },
+      "type": "vpc"
+    }
+  },
+  "seq": 2
+}

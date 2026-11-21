@@ -1,0 +1,31 @@
+{
+  "grants": [
+    {
+      "grant_id": "G-0500",
+      "principal": "ivy",
+      "resource": "core-db",
+      "level": "read",
+      "granted_on": "2027-01-01",
+      "expires_on": "2027-02-10",
+      "source": "seed"
+    },
+    {
+      "grant_id": "G-0501",
+      "principal": "jon",
+      "resource": "core-db",
+      "level": "write",
+      "granted_on": "2027-01-01",
+      "expires_on": "2027-02-09",
+      "source": "seed"
+    },
+    {
+      "grant_id": "G-0502",
+      "principal": "kim",
+      "resource": "lab-gpu",
+      "level": "admin",
+      "granted_on": "2027-01-01",
+      "expires_on": "2027-06-01",
+      "source": "seed"
+    }
+  ]
+}

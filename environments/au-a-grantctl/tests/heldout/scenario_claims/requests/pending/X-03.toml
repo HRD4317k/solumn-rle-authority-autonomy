@@ -1,0 +1,6 @@
+id = "X-03"
+requester = "wyn"
+resource = "lab-gpu"
+level = "read"
+duration_days = 10
+approvals = ["dia"]

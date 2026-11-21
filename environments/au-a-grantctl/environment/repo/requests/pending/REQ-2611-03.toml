@@ -1,0 +1,9 @@
+id = "REQ-2611-03"
+requester = "v.kumar"
+resource = "prod-ledger-db"
+level = "admin"
+duration_days = 60
+approvals = ["s.bose", "k.iyer"]
+ticket = "FIN-3107"
+justification = "Ledger partition maintenance (index rebuild) during the December freeze window."
+notes = "k.iyer approved from leave over chat; s.bose approved as cover."

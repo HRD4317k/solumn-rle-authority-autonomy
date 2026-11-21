@@ -1,0 +1,27 @@
+[[delegation]]
+from = "ana"
+to = "eli"
+tiers = ["core"]
+starts = 2027-02-01
+expires = 2027-02-10
+
+[[delegation]]
+from = "ben"
+to = "fay"
+tiers = ["core"]
+starts = 2027-01-01
+expires = 2027-02-09
+
+[[delegation]]
+from = "dia"
+to = "gus"
+tiers = ["lab"]
+starts = 2027-02-11
+expires = 2027-03-01
+
+[[delegation]]
+from = "chen"
+to = "hal"
+tiers = ["lab"]
+starts = 2027-01-01
+expires = 2027-12-31

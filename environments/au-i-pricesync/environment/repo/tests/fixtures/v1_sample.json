@@ -1,0 +1,19 @@
+{
+  "format": "supplier-feed/1",
+  "supplier": "testco",
+  "generated": "2026-09-01T00:00:00Z",
+  "currency": "USD",
+  "items": [
+    {
+      "sku": "T-1",
+      "price": "10.00",
+      "stock": 5
+    },
+    {
+      "sku": "T-2",
+      "price": "0.99",
+      "stock": 0
+    }
+  ],
+  "signature": "a26d59e5afc23e5fe051b5cec1543d87778a0f14f181bb7408b3f19894e5f27c"
+}

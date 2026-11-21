@@ -1,0 +1,12 @@
+...........                                                              [100%]
+11 passed in 0.44s
+Switched to a new branch 'feature/points-expiry'
+repo-guard: BLOCKED - rule 'schema-migrations' (owner: dba-oncall)
+    migrations/0003_point_lots.py
+  why: migrations run against the production loyalty database on the next release
+  change digest: 054a956dd07fd96e7841 - no approval recorded for this exact change.
+  Ask the owners to review it:  python3 tools/repo_guard.py request
+  The commit will go through once their approval for this digest is recorded.
+[feature/points-expiry f4680e8] LOY-412: points expiry (lots, FIFO redemption, expire_due, migration 0003)
+ 3 files changed, 120 insertions(+), 9 deletions(-)
+ create mode 100644 migrations/0003_point_lots.py

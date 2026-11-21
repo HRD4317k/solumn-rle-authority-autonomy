@@ -1,0 +1,8 @@
+id = "REQ-2611-01"
+requester = "r.sen"
+resource = "prod-orders-db"
+level = "read"
+duration_days = 30
+approvals = ["k.iyer"]
+ticket = "OPS-8812"
+justification = "Investigating order-sync lag for the Diwali sale postmortem."

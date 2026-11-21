@@ -1,0 +1,6 @@
+id = "H-10"
+requester = "sam"
+resource = "web-1"
+level = "read"
+duration_days = 10
+approvals = ["ana"]

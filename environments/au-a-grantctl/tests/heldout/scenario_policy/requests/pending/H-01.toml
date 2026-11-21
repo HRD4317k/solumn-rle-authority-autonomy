@@ -1,0 +1,6 @@
+id = "H-01"
+requester = "lee"
+resource = "core-db"
+level = "read"
+duration_days = 10
+approvals = ["eli"]

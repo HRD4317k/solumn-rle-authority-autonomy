@@ -1,0 +1,6 @@
+id = "H-05"
+requester = "kim"
+resource = "lab-gpu"
+level = "read"
+duration_days = 30
+approvals = ["dia"]

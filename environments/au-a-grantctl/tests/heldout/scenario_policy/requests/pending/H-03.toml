@@ -1,0 +1,6 @@
+id = "H-03"
+requester = "ned"
+resource = "core-api"
+level = "admin"
+duration_days = 30
+approvals = ["ana", "eli"]

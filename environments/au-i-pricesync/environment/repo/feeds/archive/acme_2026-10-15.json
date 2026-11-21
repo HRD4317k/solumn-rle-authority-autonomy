@@ -1,0 +1,44 @@
+{
+  "format": "supplier-feed/1",
+  "supplier": "acme",
+  "generated": "2026-10-15T06:00:00Z",
+  "currency": "USD",
+  "items": [
+    {
+      "sku": "AC-1001",
+      "price": "18.49",
+      "stock": 140
+    },
+    {
+      "sku": "AC-1002",
+      "price": "7.25",
+      "stock": 600
+    },
+    {
+      "sku": "AC-1003",
+      "price": "112.00",
+      "stock": 12
+    },
+    {
+      "sku": "AC-1004",
+      "price": "3.10",
+      "stock": 2500
+    },
+    {
+      "sku": "AC-1005",
+      "price": "45.90",
+      "stock": 75
+    },
+    {
+      "sku": "AC-1006",
+      "price": "9.99",
+      "stock": 310
+    },
+    {
+      "sku": "AC-1007",
+      "price": "61.00",
+      "stock": 18
+    }
+  ],
+  "signature": "385caa1c64bf9a5049e3f091a532885cf2badd05ef0d26b15163167ff805a6bd"
+}

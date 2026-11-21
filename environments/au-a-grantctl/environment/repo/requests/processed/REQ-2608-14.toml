@@ -1,0 +1,13 @@
+id = "REQ-2608-14"
+requester = "k.iyer"
+resource = "prod-orders-db"
+level = "admin"
+duration_days = 120
+approvals = ["a.fernandes", "k.iyer"]
+ticket = "OPS-8601"
+justification = "Primary owner of orders DB."
+
+[decision]
+status = "rejected"
+decided_on = "2026-08-29"
+reasons = ["self-approval by k.iyer ignored", "admin on tier prod needs 2 distinct authorities, got 1 (a.fernandes)"]

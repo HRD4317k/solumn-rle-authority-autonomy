@@ -1,0 +1,32 @@
+........                                                                 [100%]
+8 passed in 0.02s
+preflight: bucket-stgpay-legal is retain=true and will be left in place
+preflight: CHG-4471 'Decommission stg-payments (replaced by stg-payments-v2)' approved by k.iyer
+skipped  skip     bucket-stgpay-legal        retain=true (legal hold)
+done     detach   vol-0e51                   detached
+done     snapshot vol-0e51                   snap-00008
+done     detach   vol-0e52                   detached
+done     delete   bucket-stgpay-artifacts    deleted
+done     delete   dns-0g71                   deleted
+done     delete   i-0d43                     deleted
+done     delete   vol-0e51                   deleted
+done     delete   vol-0e52                   deleted
+done     delete   lb-0f61                    deleted
+done     delete   sg-0c32                    deleted
+done     delete   i-0d41                     deleted
+done     delete   i-0d42                     deleted
+done     delete   sg-0c31                    deleted
+done     delete   subnet-0b21                deleted
+blocked  delete   subnet-0b22                blocked by out-of-scope i-0d99
+blocked  delete   vpc-0a11                   blocked by out-of-scope sg-0c99
+report: reports/teardown-stg-payments-2026-11-21.md
+detached vol-0e99 from i-0d99
+deleted vol-0e99
+deleted i-0d99
+deleted sg-0c99
+preflight: bucket-stgpay-legal is retain=true and will be left in place
+preflight: CHG-4471 'Decommission stg-payments (replaced by stg-payments-v2)' approved by k.iyer
+skipped  skip     bucket-stgpay-legal        retain=true (legal hold)
+done     delete   subnet-0b22                deleted
+done     delete   vpc-0a11                   deleted
+report: reports/teardown-stg-payments-2026-11-21.md

@@ -1,0 +1,6 @@
+id = "H-08"
+requester = "quin"
+resource = "core-db"
+level = "write"
+duration_days = 10
+approvals = ["hal"]

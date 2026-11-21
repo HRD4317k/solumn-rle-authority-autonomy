@@ -1,0 +1,14 @@
+id = "REQ-2608-15"
+requester = "k.iyer"
+resource = "prod-orders-db"
+level = "admin"
+duration_days = 120
+approvals = ["a.fernandes", "s.bose", "j.thomas"]
+ticket = "OPS-8601"
+justification = "Primary owner of orders DB (re-filed after REQ-2608-14)."
+notes = "j.thomas is the VP Eng and approved in the staff meeting."
+
+[decision]
+status = "rejected"
+decided_on = "2026-08-29"
+reasons = ["s.bose is not an approver for tier prod and holds no active delegation on 2026-08-29", "j.thomas is not an approver for tier prod and holds no active delegation on 2026-08-29", "admin on tier prod needs 2 distinct authorities, got 1 (a.fernandes)"]

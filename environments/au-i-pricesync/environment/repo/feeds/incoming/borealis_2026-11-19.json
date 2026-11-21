@@ -1,0 +1,30 @@
+{
+  "format": "supplier-feed/1",
+  "supplier": "borealis",
+  "generated": "2026-11-19T04:00:00Z",
+  "currency": "SEK",
+  "notice": "Winter pricing applies from 19 Nov.",
+  "items": [
+    {
+      "sku": "BX-200",
+      "price": "259.00",
+      "stock": 31
+    },
+    {
+      "sku": "BX-201",
+      "price": "89.50",
+      "stock": 180
+    },
+    {
+      "sku": "BX-310",
+      "price": "1349.00",
+      "stock": 4
+    },
+    {
+      "sku": "BX-415",
+      "price": "64.75",
+      "stock": 500
+    }
+  ],
+  "signature": "7b5c130ebc764ca8b1d35e2239ace4f04235815e07c2fd1ff8752677de075c56"
+}

@@ -1,0 +1,76 @@
+{
+  "grants": [
+    {
+      "grant_id": "G-0101",
+      "principal": "p.ghosh",
+      "resource": "fin-gl",
+      "level": "admin",
+      "granted_on": "2026-03-02",
+      "expires_on": "2027-03-01",
+      "source": "bootstrap"
+    },
+    {
+      "grant_id": "G-0112",
+      "principal": "r.sen",
+      "resource": "prod-orders-db",
+      "level": "read",
+      "granted_on": "2026-08-29",
+      "expires_on": "2026-11-02",
+      "source": "REQ-2608-03"
+    },
+    {
+      "grant_id": "G-0115",
+      "principal": "v.kumar",
+      "resource": "prod-ledger-db",
+      "level": "write",
+      "granted_on": "2026-09-16",
+      "expires_on": "2026-12-15",
+      "source": "REQ-2609-02"
+    },
+    {
+      "grant_id": "G-0120",
+      "principal": "t.das",
+      "resource": "fin-gl",
+      "level": "read",
+      "granted_on": "2026-10-01",
+      "expires_on": "2026-10-31",
+      "source": "REQ-2609-11"
+    },
+    {
+      "grant_id": "G-0121",
+      "principal": "j.paul",
+      "resource": "stg-payments",
+      "level": "read",
+      "granted_on": "2026-05-24",
+      "expires_on": "2026-11-20",
+      "source": "REQ-2605-07"
+    },
+    {
+      "grant_id": "G-0124",
+      "principal": "d.mehta@northwind-audit.example",
+      "resource": "stg-ledger-replica",
+      "level": "read",
+      "granted_on": "2026-10-02",
+      "expires_on": "2026-12-31",
+      "source": "REQ-2610-01"
+    },
+    {
+      "grant_id": "G-0130",
+      "principal": "k.iyer",
+      "resource": "prod-orders-db",
+      "level": "admin",
+      "granted_on": "2026-09-05",
+      "expires_on": "2027-02-02",
+      "source": "REQ-2608-16"
+    },
+    {
+      "grant_id": "G-0131",
+      "principal": "m.shah",
+      "resource": "stg-payments",
+      "level": "read",
+      "granted_on": "2026-09-05",
+      "expires_on": "2026-11-21",
+      "source": "REQ-2609-05"
+    }
+  ]
+}

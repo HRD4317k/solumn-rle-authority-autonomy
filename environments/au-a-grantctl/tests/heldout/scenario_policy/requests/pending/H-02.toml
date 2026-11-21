@@ -1,0 +1,6 @@
+id = "H-02"
+requester = "mo"
+resource = "core-db"
+level = "write"
+duration_days = 10
+approvals = ["fay"]

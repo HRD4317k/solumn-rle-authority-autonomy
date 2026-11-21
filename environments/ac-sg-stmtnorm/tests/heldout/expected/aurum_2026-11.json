@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2026-11-02",
+    "description": "Refund, order 77",
+    "amount": "12.00",
+    "balance": "2466.80"
+  },
+  {
+    "date": "2026-11-09",
+    "description": "TFL TRAVEL CHARGE",
+    "amount": "-7.40",
+    "balance": "2459.40"
+  },
+  {
+    "date": "2026-11-11",
+    "description": "Transfer to savings",
+    "amount": "-1000.00",
+    "balance": "1459.40"
+  }
+]

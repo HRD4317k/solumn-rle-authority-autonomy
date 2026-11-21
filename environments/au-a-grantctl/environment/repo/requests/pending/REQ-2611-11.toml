@@ -1,0 +1,8 @@
+id = "REQ-2611-11"
+requester = "c.joshi"
+resource = "qa-metrics"
+level = "read"
+duration_days = 30
+approvals = ["k.iyer"]
+ticket = "QA-310"
+justification = "Dashboards for the release train."

@@ -1,0 +1,11 @@
+[tiers.core]
+resources = ["core-*"]
+approvers = ["ana", "ben", "chen"]
+admin_requires = 2
+max_days = 60
+
+[tiers.lab]
+resources = ["lab-*", "sbx-*"]
+approvers = ["dia"]
+admin_requires = 1
+max_days = 120

@@ -1,0 +1,13 @@
+id = "REQ-2608-16"
+requester = "k.iyer"
+resource = "prod-orders-db"
+level = "admin"
+duration_days = 120
+approvals = ["a.fernandes"]
+ticket = "OPS-8601"
+justification = "Re-filed via Access Review Board exception ARB-114 (single approver, 150 days)."
+
+[decision]
+status = "approved"
+decided_on = "2026-09-05"
+reasons = ["Access Review Board exception ARB-114 applied manually by Security (see audit log)"]

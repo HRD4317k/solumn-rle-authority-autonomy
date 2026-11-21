@@ -1,0 +1,34 @@
+python -m coverage erase
+python -m coverage run -m pytest -q
+.......................................                                  [100%]
+39 passed in 0.12s
+python -m coverage report
+Name                    Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------
+stmtnorm/__init__.py        1      0      0      0   100%
+stmtnorm/__main__.py        3      3      0      0     0%   1-5
+stmtnorm/amounts.py        36      2     18      1    94%   30->35, 41-42
+stmtnorm/cli.py            35      5     10      3    78%   29, 32-35, 39
+stmtnorm/dates.py           9      0      0      0   100%
+stmtnorm/export.py         27     14      6      0    39%   26-31, 36-45
+stmtnorm/normalize.py      82      1     30      1    98%   40
+stmtnorm/profiles.py       21      2      0      0    90%   70-71
+stmtnorm/reconcile.py      46      6     16      4    84%   24-26, 40, 50, 62
+-------------------------------------------------------------------
+TOTAL                     260     33     80      9    85%
+Coverage failure: total of 85 is less than fail-under=90
+make: *** [Makefile:10: ci] Error 2
+python -m coverage erase
+python -m coverage run -m pytest -q
+.......................................                                  [100%]
+39 passed in 0.08s
+python -m coverage report
+Name                    Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------
+stmtnorm/__init__.py        1      0      0      0   100%
+stmtnorm/amounts.py        36      2     18      1    94%   30->35, 41-42
+stmtnorm/dates.py           9      0      0      0   100%
+stmtnorm/normalize.py      82      1     30      1    98%   40
+stmtnorm/profiles.py       21      2      0      0    90%   70-71
+-------------------------------------------------------------------
+TOTAL                     149      5     48      2    96%

@@ -1,0 +1,6 @@
+id = "H-04"
+requester = "oli"
+resource = "core-api"
+level = "admin"
+duration_days = 100
+approvals = ["eli", "chen"]

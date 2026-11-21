@@ -1,0 +1,8 @@
+id = "REQ-2611-04"
+requester = "m.shah"
+resource = "prod-ledger-db"
+level = "write"
+duration_days = 45
+approvals = ["s.bose"]
+ticket = "FIN-3111"
+justification = "Month-end accrual corrections."

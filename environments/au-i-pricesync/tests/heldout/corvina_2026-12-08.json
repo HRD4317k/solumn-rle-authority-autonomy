@@ -1,0 +1,27 @@
+{
+  "format": "supplier-feed/2",
+  "supplier": "corvina",
+  "issued_at": "2026-12-08T07:00:00.5Z",
+  "key_id": "corvina-kr1",
+  "signature": "APYScq4aVRY7lV61AawhA4BOIDYzAb6OiEkZhYedf+4=",
+  "items": [
+    {
+      "sku": "CV-77",
+      "currency": "GBP",
+      "unit_price_minor": 1180,
+      "available": 35,
+      "price_breaks": [
+        {
+          "min_qty": 20,
+          "unit_price_minor": 1130
+        }
+      ]
+    },
+    {
+      "sku": "CV-3",
+      "currency": "CHF",
+      "unit_price_minor": 799,
+      "available": 950
+    }
+  ]
+}

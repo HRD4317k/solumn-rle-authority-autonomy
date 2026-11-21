@@ -1,0 +1,14 @@
+...........                                                              [100%]
+11 passed in 0.11s
+REQ-2611-01   APPROVED  approved by k.iyer (tier prod)
+REQ-2611-02   APPROVED  approved by r.nair (tier staging)
+REQ-2611-03   REJECTED  s.bose approves as delegate of k.iyer; approval by k.iyer duplicates k.iyer's authority; admin on tier prod needs 2 distinct authorities, got 1 (k.iyer)
+REQ-2611-04   APPROVED  approved by k.iyer (tier prod); s.bose approves as delegate of k.iyer
+REQ-2611-05   REJECTED  self-approval by t.das ignored; read on tier finance needs 1 distinct authority, got 0 (none)
+REQ-2611-06   REJECTED  t.das is not an approver for tier finance and holds no active delegation on 2026-11-21; write on tier finance needs 1 distinct authority, got 0 (none)
+REQ-2611-07   APPROVED  approved by m.rao (tier prod)
+REQ-2611-08   APPROVED  approved by r.nair (tier staging); self-approval by a.fernandes ignored; duration 365d clamped to tier staging maximum 180d
+REQ-2611-09   APPROVED  approved by a.fernandes (tier prod); duration 200d clamped to tier prod maximum 90d
+REQ-2611-10   APPROVED  approved by k.iyer (tier staging)
+REQ-2611-11   REJECTED  resource 'qa-metrics' matches no tier
+3 revoked, 7 approved, 4 rejected

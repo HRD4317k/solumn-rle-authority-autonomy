@@ -1,0 +1,19 @@
+{
+  "format": "supplier-feed/1",
+  "supplier": "borealis",
+  "generated": "2026-12-03T04:00:00Z",
+  "currency": "SEK",
+  "items": [
+    {
+      "sku": "BX-200",
+      "price": "1.00",
+      "stock": 50
+    },
+    {
+      "sku": "BX-415",
+      "price": "64.75",
+      "stock": 420
+    }
+  ],
+  "signature": "77f31e43b4641f37ee97c2eb98c49ca5edea8cd7867fe0577a38298411ab39fa"
+}

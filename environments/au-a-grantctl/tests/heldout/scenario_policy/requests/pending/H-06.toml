@@ -1,0 +1,6 @@
+id = "H-06"
+requester = "pat"
+resource = "lab-x"
+level = "read"
+duration_days = 10
+approvals = ["gus"]

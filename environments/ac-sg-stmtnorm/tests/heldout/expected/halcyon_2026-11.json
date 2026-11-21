@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-11-02",
+    "description": "Lastschrift; Strom November",
+    "amount": "-212.40",
+    "balance": "-120.50"
+  },
+  {
+    "date": "2026-11-05",
+    "description": "Gutschrift Kunde 4471",
+    "amount": "12345.67",
+    "balance": "12225.17"
+  },
+  {
+    "date": "2026-11-09",
+    "description": "Zahlung \"Lieferant\" AG",
+    "amount": "-1000.00",
+    "balance": "11225.17"
+  },
+  {
+    "date": "2026-11-30",
+    "description": "Kontoführungsgebühr",
+    "amount": "-9.90",
+    "balance": "11215.27"
+  }
+]

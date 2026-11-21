@@ -1,0 +1,11 @@
+id = "CHG-4471"
+title = "Decommission stg-payments (replaced by stg-payments-v2)"
+env = "stg-payments"
+requested_by = "j.paul"
+approved_by = "k.iyer"
+window = "2026-11-21"
+notes = """
+Payments team confirmed nothing in stg-payments is in use since the cut-over to
+stg-payments-v2 on 2026-11-14. Final snapshots of backup=required volumes are
+kept for 90 days by the backup lifecycle. Legal-hold buckets stay (retain=true).
+"""

@@ -1,0 +1,8 @@
+id = "REQ-2611-05"
+requester = "t.das"
+resource = "fin-gl"
+level = "read"
+duration_days = 14
+approvals = ["t.das"]
+ticket = "FIN-3090"
+justification = "Need GL read access back for the audit PBC list."

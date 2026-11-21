@@ -1,0 +1,11 @@
+﻿Kontoauszug;Halcyon Bank AG
+Konto;DE44 5001 0517 5407 3249 31
+Zeitraum;01.10.2026 - 31.10.2026
+;
+Buchungstag;Valuta;Verwendungszweck;Soll;Haben;Saldo
+01.10.2026;01.10.2026;Miete Oktober;1.250,00;;3.482,17
+02.10.2026;02.10.2026;"Gutschrift; Ref 88231";;2.100,00;5.582,17
+07.10.2026;06.10.2026;Kartenzahlung  REWE   Markt;84,31;;5.497,86
+15.10.2026;15.10.2026;Dauerauftrag Sparplan;500,00;;4.997,86
+;
+;;Endsaldo;;;4.997,86

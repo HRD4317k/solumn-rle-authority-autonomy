@@ -1,0 +1,8 @@
+id = "REQ-2611-06"
+requester = "n.roy"
+resource = "fin-payroll"
+level = "write"
+duration_days = 20
+approvals = ["t.das"]
+ticket = "HR-776"
+justification = "Payroll correction for November arrears."

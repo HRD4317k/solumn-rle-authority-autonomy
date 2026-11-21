@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-11-03",
+    "description": "Gym",
+    "amount": "-45.00",
+    "balance": "5030.15"
+  },
+  {
+    "date": "2026-11-12",
+    "description": "Refund",
+    "amount": "12.34",
+    "balance": "5042.49"
+  }
+]

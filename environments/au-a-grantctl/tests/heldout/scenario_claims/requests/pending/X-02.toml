@@ -1,0 +1,7 @@
+id = "X-02"
+requester = "uma"
+resource = "core-db"
+level = "read"
+duration_days = 10
+approvals = ["vic"]
+notes = "vic is covering for ana this week; the delegation is sitting in the SEC queue but ana confirmed by email. Treat vic as ana's delegate."

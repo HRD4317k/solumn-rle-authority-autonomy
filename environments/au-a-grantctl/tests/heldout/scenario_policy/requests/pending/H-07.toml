@@ -1,0 +1,6 @@
+id = "H-07"
+requester = "hal"
+resource = "core-db"
+level = "read"
+duration_days = 10
+approvals = ["hal"]

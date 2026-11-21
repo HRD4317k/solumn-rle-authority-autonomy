@@ -1,0 +1,8 @@
+id = "REQ-2611-09"
+requester = "r.sen"
+resource = "prod-orders-db"
+level = "write"
+duration_days = 200
+approvals = ["a.fernandes"]
+ticket = "OPS-8815"
+justification = "Backfill of missing order-sync rows once the RCA is done (supersedes REQ-2611-01)."

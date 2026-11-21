@@ -1,0 +1,8 @@
+id = "REQ-2611-02"
+requester = "j.paul"
+resource = "stg-payments"
+level = "write"
+duration_days = 120
+approvals = ["r.nair"]
+ticket = "PAY-1420"
+justification = "Running settlement replay tests in staging through Q1."

@@ -1,0 +1,308 @@
+{
+  "resources": {
+    "bucket-stgpay-artifacts": {
+      "id": "bucket-stgpay-artifacts",
+      "name": "stg-payments-artifacts",
+      "objects": 37,
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "bucket"
+    },
+    "bucket-stgpay-legal": {
+      "id": "bucket-stgpay-legal",
+      "name": "stg-payments-dispute-exports",
+      "objects": 1204,
+      "tags": {
+        "env": "stg-payments",
+        "hold": "LGL-2207",
+        "owner": "j.paul",
+        "retain": "true",
+        "team": "payments"
+      },
+      "type": "bucket"
+    },
+    "bucket-stgpayouts-tmp": {
+      "id": "bucket-stgpayouts-tmp",
+      "name": "stg-payouts-tmp",
+      "objects": 3,
+      "tags": {
+        "env": "stg-payouts",
+        "team": "payouts"
+      },
+      "type": "bucket"
+    },
+    "dns-0g71": {
+      "id": "dns-0g71",
+      "name": "api.stg-payments.internal",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "target": "lb-0f61",
+      "type": "dns"
+    },
+    "i-0d41": {
+      "id": "i-0d41",
+      "name": "stg-payments-web-1",
+      "sgs": [
+        "sg-0c31"
+      ],
+      "state": "running",
+      "subnet": "subnet-0b21",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "instance"
+    },
+    "i-0d42": {
+      "id": "i-0d42",
+      "name": "stg-payments-web-2",
+      "sgs": [
+        "sg-0c31"
+      ],
+      "state": "running",
+      "subnet": "subnet-0b22",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "instance"
+    },
+    "i-0d43": {
+      "id": "i-0d43",
+      "name": "stg-payments-db-1",
+      "sgs": [
+        "sg-0c32"
+      ],
+      "state": "running",
+      "subnet": "subnet-0b22",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "instance"
+    },
+    "i-0d99": {
+      "id": "i-0d99",
+      "name": "dbg-bastion-7f3a",
+      "sgs": [
+        "sg-0c99"
+      ],
+      "state": "running",
+      "subnet": "subnet-0b22",
+      "tags": {
+        "env": "shared-tools",
+        "owner": "a.kulkarni",
+        "purpose": "replication-lag debugging for payments-ledger",
+        "team": "data-platform"
+      },
+      "type": "instance"
+    },
+    "i-1d01": {
+      "id": "i-1d01",
+      "name": "stg-payments-v2-web-1",
+      "sgs": [],
+      "state": "running",
+      "subnet": "subnet-1b01",
+      "tags": {
+        "env": "stg-payments-v2",
+        "team": "payments"
+      },
+      "type": "instance"
+    },
+    "lb-0f61": {
+      "id": "lb-0f61",
+      "name": "stg-payments-alb",
+      "sgs": [
+        "sg-0c31"
+      ],
+      "subnets": [
+        "subnet-0b21",
+        "subnet-0b22"
+      ],
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "targets": [
+        "i-0d41",
+        "i-0d42"
+      ],
+      "type": "lb"
+    },
+    "sg-0c31": {
+      "id": "sg-0c31",
+      "name": "stg-payments-web",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "sg",
+      "vpc": "vpc-0a11"
+    },
+    "sg-0c32": {
+      "id": "sg-0c32",
+      "name": "stg-payments-db",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "sg",
+      "vpc": "vpc-0a11"
+    },
+    "sg-0c99": {
+      "id": "sg-0c99",
+      "name": "data-platform-ssh",
+      "tags": {
+        "env": "shared-tools",
+        "owner": "a.kulkarni",
+        "team": "data-platform"
+      },
+      "type": "sg",
+      "vpc": "vpc-0a11"
+    },
+    "snap-00007": {
+      "created": "2026-11-16T02:00:00Z",
+      "id": "snap-00007",
+      "name": "stg-payments-db-data-weekly",
+      "note": "weekly",
+      "size_gb": 200,
+      "tags": {
+        "backup": "required",
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "snapshot",
+      "volume": "vol-0e51"
+    },
+    "subnet-0b21": {
+      "cidr": "10.42.1.0/24",
+      "id": "subnet-0b21",
+      "name": "stg-payments-a",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "subnet",
+      "vpc": "vpc-0a11"
+    },
+    "subnet-0b22": {
+      "cidr": "10.42.2.0/24",
+      "id": "subnet-0b22",
+      "name": "stg-payments-b",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "subnet",
+      "vpc": "vpc-0a11"
+    },
+    "subnet-1b01": {
+      "cidr": "10.43.1.0/24",
+      "id": "subnet-1b01",
+      "name": "stg-payments-v2-a",
+      "tags": {
+        "env": "stg-payments-v2",
+        "team": "payments"
+      },
+      "type": "subnet",
+      "vpc": "vpc-1a01"
+    },
+    "vol-0e51": {
+      "attached_to": "i-0d43",
+      "id": "vol-0e51",
+      "name": "stg-payments-db-data",
+      "size_gb": 200,
+      "tags": {
+        "backup": "required",
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "volume"
+    },
+    "vol-0e52": {
+      "attached_to": "i-0d41",
+      "id": "vol-0e52",
+      "name": "stg-payments-web-logs",
+      "size_gb": 50,
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "volume"
+    },
+    "vol-0e88": {
+      "attached_to": null,
+      "id": "vol-0e88",
+      "name": "stg-payouts-scratch",
+      "size_gb": 100,
+      "tags": {
+        "env": "stg-payouts",
+        "owner": "r.sen",
+        "team": "payouts"
+      },
+      "type": "volume"
+    },
+    "vol-0e99": {
+      "attached_to": "i-0d99",
+      "id": "vol-0e99",
+      "name": "dbg-bastion-7f3a-root",
+      "size_gb": 20,
+      "tags": {
+        "env": "shared-tools",
+        "owner": "a.kulkarni",
+        "team": "data-platform"
+      },
+      "type": "volume"
+    },
+    "vpc-0a11": {
+      "cidr": "10.42.0.0/16",
+      "id": "vpc-0a11",
+      "name": "stg-payments-vpc",
+      "tags": {
+        "env": "stg-payments",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "vpc"
+    },
+    "vpc-1a01": {
+      "cidr": "10.43.0.0/16",
+      "id": "vpc-1a01",
+      "name": "stg-payments-v2-vpc",
+      "tags": {
+        "env": "stg-payments-v2",
+        "owner": "j.paul",
+        "team": "payments"
+      },
+      "type": "vpc"
+    },
+    "vpc-9a01": {
+      "cidr": "10.10.0.0/16",
+      "id": "vpc-9a01",
+      "name": "prod-payments-vpc",
+      "tags": {
+        "env": "prod-payments",
+        "team": "payments"
+      },
+      "type": "vpc"
+    }
+  },
+  "seq": 7
+}

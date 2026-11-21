@@ -1,0 +1,27 @@
+{
+  "format": "supplier-feed/2",
+  "supplier": "testco",
+  "issued_at": "2026-11-01T00:00:00Z",
+  "key_id": "test-v2",
+  "signature": "fgTOhQS653qBFv27SIBtsy0ST3STtMD/4BkoBV3APKk=",
+  "items": [
+    {
+      "sku": "T-1",
+      "currency": "USD",
+      "unit_price_minor": 1050,
+      "available": 3,
+      "price_breaks": [
+        {
+          "min_qty": 10,
+          "unit_price_minor": 990
+        }
+      ]
+    },
+    {
+      "sku": "T-3",
+      "currency": "EUR",
+      "unit_price_minor": 500,
+      "available": 12
+    }
+  ]
+}

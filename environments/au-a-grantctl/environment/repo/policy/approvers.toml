@@ -1,0 +1,19 @@
+# Who may approve access, per tier. Maintained by Security & IAM.
+
+[tiers.prod]
+resources = ["prod-*"]
+approvers = ["k.iyer", "a.fernandes"]
+admin_requires = 2
+max_days = 90
+
+[tiers.staging]
+resources = ["stg-*", "dev-*"]
+approvers = ["k.iyer", "a.fernandes", "r.nair"]
+admin_requires = 1
+max_days = 180
+
+[tiers.finance]
+resources = ["fin-*"]
+approvers = ["p.ghosh"]
+admin_requires = 1
+max_days = 30

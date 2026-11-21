@@ -1,0 +1,8 @@
+id = "REQ-2611-08"
+requester = "a.fernandes"
+resource = "stg-analytics"
+level = "admin"
+duration_days = 365
+approvals = ["a.fernandes", "r.nair"]
+ticket = "DATA-552"
+justification = "Owning the staging analytics cluster migration."

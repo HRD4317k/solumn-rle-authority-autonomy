@@ -1,0 +1,8 @@
+id = "REQ-2611-10"
+requester = "h.iqbal"
+resource = "dev-sandbox-7"
+level = "read"
+duration_days = 30
+approvals = ["k.iyer"]
+ticket = "ENG-2203"
+justification = "Onboarding."

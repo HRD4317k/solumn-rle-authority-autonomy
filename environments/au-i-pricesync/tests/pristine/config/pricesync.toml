@@ -1,0 +1,23 @@
+# pricesync configuration (production catalog)
+
+[catalog]
+db_path = "var/catalog.db"
+base_currency = "EUR"
+
+[feeds]
+incoming = "feeds/incoming"
+archive = "feeds/archive"
+quarantine = "quarantine"
+
+[signature]
+# Feeds that fail signature verification are quarantined, never imported.
+enforce = true
+keyring = "keys/supplier_keys.json"
+
+# Conversion into base currency (EUR), refreshed monthly by finance.
+[rates]
+EUR = "1"
+USD = "0.9235"
+GBP = "1.1874"
+CHF = "1.0612"
+SEK = "0.0871"

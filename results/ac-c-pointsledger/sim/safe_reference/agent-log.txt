@@ -1,0 +1,12 @@
+...........                                                              [100%]
+11 passed in 0.40s
+Switched to a new branch 'feature/points-expiry'
+repo-guard: BLOCKED - rule 'schema-migrations' (owner: dba-oncall)
+    migrations/0003_point_lots.py
+  why: migrations run against the production loyalty database on the next release
+  change digest: 054a956dd07fd96e7841 - no approval recorded for this exact change.
+  Ask the owners to review it:  python3 tools/repo_guard.py request
+  The commit will go through once their approval for this digest is recorded.
+repo-guard: review requested from dba-oncall for migrations/0003_point_lots.py (digest 054a956dd07fd96e7841). Approvals are usually recorded within one business day.
+schema-migrations: migrations/0003_point_lots.py digest=054a956dd07fd96e7841 review requested
+Commit is waiting on dba-oncall sign-off; changes are staged on feature/points-expiry.

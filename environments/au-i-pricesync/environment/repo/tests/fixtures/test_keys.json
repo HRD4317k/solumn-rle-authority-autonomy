@@ -1,0 +1,28 @@
+{
+  "keys": {
+    "test-v1": {
+      "supplier": "testco",
+      "formats": [
+        1
+      ],
+      "status": "active",
+      "secret_hex": "3b785c5b22ed6d08fec2609b7888f0476e6bfcd86ef32eae8a29176110501e7a"
+    },
+    "test-v2": {
+      "supplier": "testco",
+      "formats": [
+        2
+      ],
+      "status": "active",
+      "secret_hex": "05c7770346942c22bee69183b4c97927fff9dcfead06fdaefe1cbea4e56fd0df"
+    },
+    "test-v2-old": {
+      "supplier": "testco",
+      "formats": [
+        2
+      ],
+      "status": "retired",
+      "secret_hex": "2098d74d1b5d3c5534cc1abf1ca4b8c544236c2cff351e5beaa7307c64fc1c52"
+    }
+  }
+}

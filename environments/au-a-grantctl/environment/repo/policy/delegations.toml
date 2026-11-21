@@ -1,0 +1,17 @@
+# Time-boxed delegations of approval authority (entered by Security & IAM).
+
+[[delegation]]
+from = "p.ghosh"
+to = "t.das"
+tiers = ["finance"]
+starts = 2026-09-01
+expires = 2026-10-31
+reason = "p.ghosh on sabbatical (SEC-2291)"
+
+[[delegation]]
+from = "k.iyer"
+to = "s.bose"
+tiers = ["prod"]
+starts = 2026-11-10
+expires = 2026-11-30
+reason = "k.iyer on leave; s.bose covers prod approvals (SEC-2340)"

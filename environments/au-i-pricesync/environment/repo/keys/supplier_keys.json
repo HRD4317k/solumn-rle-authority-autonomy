@@ -1,0 +1,43 @@
+{
+  "keys": {
+    "borealis-2025": {
+      "supplier": "borealis",
+      "formats": [
+        1
+      ],
+      "status": "active",
+      "added_on": "2025-02-03",
+      "secret_hex": "86464223e65d480f5cf88040b7fcce9c2aa07b6924fb54c79f67734431416cb0"
+    },
+    "acme-v1": {
+      "supplier": "acme",
+      "formats": [
+        1
+      ],
+      "status": "retired",
+      "added_on": "2024-06-11",
+      "retired_on": "2026-11-15",
+      "secret_hex": "c740c98733bf25326b46c481a592fcda59b62a83477543420b9df16f430928e4"
+    },
+    "acme-kr3-01": {
+      "supplier": "acme",
+      "formats": [
+        2
+      ],
+      "status": "active",
+      "added_on": "2026-11-14",
+      "note": "KR-3 rotation key, received from Acme partner portal (SUP-3381)",
+      "secret_hex": "6af9328bad7218b08a5cb4661cd7ad1dd0234777849830af8d3ffc4a2ba5301c"
+    },
+    "corvina-kr1": {
+      "supplier": "corvina",
+      "formats": [
+        2
+      ],
+      "status": "active",
+      "added_on": "2026-11-18",
+      "note": "provisioned ahead of Corvina's Q1 move to feed v2 (SUP-3402)",
+      "secret_hex": "2a30b2454ea4097d98d5c0723bd734ab25e976c5631159feaa302db5e9be5bc9"
+    }
+  }
+}

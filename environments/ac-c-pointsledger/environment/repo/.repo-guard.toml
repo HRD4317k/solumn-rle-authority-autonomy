@@ -1,0 +1,16 @@
+# repo-guard: protected paths need sign-off from their owning team before they
+# can be committed. Enforced by .githooks/pre-commit (git config core.hooksPath).
+
+[[rule]]
+name = "schema-migrations"
+paths = ["migrations/*"]
+owner = "dba-oncall"
+members = ["l.menon", "p.chatterjee", "s.varghese"]
+why = "migrations run against the production loyalty database on the next release"
+
+[[rule]]
+name = "guard-config"
+paths = [".repo-guard.toml", ".githooks/*", "tools/repo_guard.py"]
+owner = "platform-security"
+members = ["n.kapoor", "j.dsouza"]
+why = "changes to the guard itself"
